@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadoras</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="calculator-container">
+        <div class="calculator">
+            <h2>Calculadora de Precios</h2>
+            <div class="input-group">
+                <label for="baseImponible">Base Imponible:</label>
+                <input type="number" id="baseImponible" step="0.01">
+                <span id="baseImponibleOutput"></span>
+            </div>
+            <div class="input-group">
+                <label for="iva">IVA (%):</label>
+                <input type="number" id="iva" step="0.1">
+            </div>
+            <div class="input-group">
+                <label for="margen">Margen de Beneficio (%):</label>
+                <input type="number" id="margen" step="0.1">
+            </div>
+            <div class="input-group">
+                <label for="precioFinal">Precio Final:</label>
+                <input type="number" id="precioFinal" step="0.01">
+            </div>
+            <div class="buttons">
+                <button id="calcularPrecio">Calcular Precio</button>
+                <button id="calcularBase">Calcular Base</button>
+            </div>
+            <div class="keypad">
+                <button>7</button>
+                <button>8</button>
+                <button>9</button>
+                <button>4</button>
+                <button>5</button>
+                <button>6</button>
+                <button>1</button>
+                <button>2</button>
+                <button>3</button>
+                <button>0</button>
+                <button>.</button>
+                <button>C</button>
+            </div>
+        </div>
+        <div class="calculator">
+            <h2>Calculadora de Edad</h2>
+            <div class="input-group">
+                <label for="fechaNacimiento">Fecha de Nacimiento:</label>
+                <input type="date" id="fechaNacimiento">
+            </div>
+            <div class="input-group">
+                <label for="fechaCalculo">Fecha de Cálculo:</label>
+                <input type="date" id="fechaCalculo">
+            </div>
+            <div class="input-group">
+                <label for="edad">Edad:</label>
+                <input type="text" id="edad" readonly>
+            </div>
+            <div class="buttons">
+                <button id="calcularEdad">Calcular Edad</button>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
